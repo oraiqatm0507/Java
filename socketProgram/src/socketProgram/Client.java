@@ -1,6 +1,6 @@
-package socketCommunication;
 import java.net.*;
 import java.io.*;
+import java.util.*;
 
 public class Client {
 	
@@ -27,10 +27,20 @@ public class Client {
     }
 
     public static void main(String args[]) throws IOException{
+        Scanner scanner = new Scanner(System.in);
         Client client = new Client();
-        client.startConnection("127.0.0.1", 4000);
-        String response = client.sendMessage("hello server");
-        response = client.sendMessage(".");
-        System.out.println(response);
+        client.startConnection("127.0.0.1", 6666);
+        System.out.println("Client Connected to Server.");
+
+        String message = "";
+        while(message != "."){
+            message = scanner.nextLine();
+            client.sendMessage(message);
+        }
+       
+        
+       // String response = client.sendMessage("hello from client 1");
+        
+       // System.out.println(response);
 	}
 }
