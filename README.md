@@ -1,6 +1,3 @@
-# Java
-All Java projects I have made.
+# Homework 1: Prime Numbers 
 
-List of Projects:
-1. PrimeNumbers
-2. Socket Program: Client/Server
+List first 100 unique prime numbers. 
