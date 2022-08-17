@@ -2,5 +2,5 @@
 
 List first 100 unique prime numbers. 
 
-Run in terminal: 
-$ java primes
+## Run Code
+Run in terminal: **$ java primes**
